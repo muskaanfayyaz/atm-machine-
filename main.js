@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 20000; //DOLLAR
 let myPinCode = 1234;
@@ -14,6 +15,7 @@ if (pinanswer.pin === myPinCode) {
 else {
     console.log("wrong pin code ...");
 }
+``;
 let operation = await inquirer.prompt([
     {
         name: "operation",
